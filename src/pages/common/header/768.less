@@ -1,0 +1,130 @@
+.pc-header {
+  display: none;
+}
+.m-header {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .left-layout {
+      position: relative;
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+      span {
+        display: block;
+        &:nth-child(1) {
+          font-size: 18px;
+          margin-bottom: 2px;
+        }
+        &:nth-child(2) {
+          font-size: 10px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 11px;
+        height: 28px;
+        background-color: #000;
+      }
+    }
+    .right-layout {
+      .menu {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        span {
+          display: block;
+          width: 27px;
+          height: 1px;
+          background-color: #999;
+          margin-bottom: 11px;
+          transition: .6s;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        &.on {
+          span {
+            &:nth-child(1) {
+              transform: translateY(12px) rotate(45deg);
+            }
+            &:nth-child(3) {
+              transform: translateY(-12px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-container {
+    display: none;
+    background-color: #fff;
+    padding: 50px 20px;
+    height: calc(100vh - 254px);
+    .nav-list {
+      margin-bottom: 50px;
+      .nav-item {
+        display: block;
+        font-size: 16px;
+        padding: 15px 0;
+        color: #999;
+        &.on {
+          color: #000;
+        }
+      }
+    }
+    .form-container{
+        margin-bottom: 50px;
+        .form-box{
+            display: flex;
+            input{
+                display: block;
+                width: 220px;
+                height: 32px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                outline: none;
+                padding-left: 10px;
+                &::placeholder{
+                    color:#999;
+                    font-size: 12px;
+                }
+            }
+            .submit{
+                display: block;
+                width: 84px;
+                height: 32px;
+                background-color: #ccc;
+                color:#fff;
+                box-sizing: border-box;
+                border:none;
+                outline: none;
+            }
+        }
+    }
+    .copyright{
+        font-size: 10px;
+        color:#999;
+    }
+  }
+}
+body{
+  padding-top: 154px;
+}

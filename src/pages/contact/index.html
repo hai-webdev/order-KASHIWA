@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 引入公共页头 -->
+  <%= require("html-loader!../common/header/index.html") %>
+    <section class="contact-container max-center pc">
+      <table>
+        <tr>
+          <td>
+            <span>ADDRESS:</span>
+          </td>
+          <td>
+            <div id="map" class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0220089635427!2d139.70803621525798!3d35.65182938020114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b425e0ea9d5%3A0x92a23c7ce028a3bc!2s1f%2C%202-ch%C5%8Dme-14-11%20Higashi%2C%20Shibuya%20City%2C%20Tokyo%20150-0011%2C%20Japan!5e0!3m2!1sen!2snl!4v1665017511740!5m2!1sen!2snl"
+                height="450" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address">
+              <p>SAMURAI INC.</p>
+              <a
+                href="http://maps.google.com/?q=%E3%80%92150-0011%20%E6%9D%B1%E4%BA%AC%E9%83%BD%20%E6%B8%8B%E8%B0%B7%E5%8C%BA%20%E6%9D%B1%202-14-11%201F&z=15">1F
+                2-14-11 Higashi Shibuya-ku Tokyo 150-0011 Japan</a>
+            </div>
+            <div class="address">
+              <p>株式会社サムライ</p>
+              <a
+                href="http://maps.google.com/?q=%E3%80%92150-0011%20%E6%9D%B1%E4%BA%AC%E9%83%BD%20%E6%B8%8B%E8%B0%B7%E5%8C%BA%20%E6%9D%B1%202-14-11%201F&z=15">〒150-0011
+                東京都 渋谷区 東 2-14-11 1F</a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>TEL:</td>
+          <td>03-3498-3601</td>
+        </tr>
+        <tr>
+          <td>FAX:</td>
+          <td>03-3498-3602</td>
+        </tr>
+        <tr>
+          <td>MAIL:</td>
+          <td>info@samurai.sh</td>
+        </tr>
+        <tr>
+          <td>TWITTER:</td>
+          <td>https://twitter.com/samurai_sh</td>
+        </tr>
+        <tr>
+          <td>FACEBOOK:</td>
+          <td>https://www.facebook.com/samurai.inc</td>
+        </tr>
+      </table>
+    </section>
+    <section class="contact-container max-center m">
+      <table>
+        <tr>
+          <td colspan="2" style="width:100%;padding:0;">
+            <div id="map" class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0220089635427!2d139.70803621525798!3d35.65182938020114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b425e0ea9d5%3A0x92a23c7ce028a3bc!2s1f%2C%202-ch%C5%8Dme-14-11%20Higashi%2C%20Shibuya%20City%2C%20Tokyo%20150-0011%2C%20Japan!5e0!3m2!1sen!2snl!4v1665017511740!5m2!1sen!2snl"
+                height="240" style="border:0;width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span>ADDRESS:</span>
+          </td>
+          <td>
+
+            <div class="address">
+              <p>SAMURAI INC.</p>
+              <a
+                href="http://maps.google.com/?q=%E3%80%92150-0011%20%E6%9D%B1%E4%BA%AC%E9%83%BD%20%E6%B8%8B%E8%B0%B7%E5%8C%BA%20%E6%9D%B1%202-14-11%201F&z=15">1F
+                2-14-11 Higashi Shibuya-ku Tokyo 150-0011 Japan</a>
+            </div>
+            <div class="address">
+              <p>株式会社サムライ</p>
+              <a
+                href="http://maps.google.com/?q=%E3%80%92150-0011%20%E6%9D%B1%E4%BA%AC%E9%83%BD%20%E6%B8%8B%E8%B0%B7%E5%8C%BA%20%E6%9D%B1%202-14-11%201F&z=15">〒150-0011
+                東京都 渋谷区 東 2-14-11 1F</a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>TEL:</td>
+          <td>03-3498-3601</td>
+        </tr>
+        <tr>
+          <td>FAX:</td>
+          <td>03-3498-3602</td>
+        </tr>
+        <tr>
+          <td>MAIL:</td>
+          <td>info@samurai.sh</td>
+        </tr>
+        <tr>
+          <td>TWITTER:</td>
+          <td>https://twitter.com/samurai_sh</td>
+        </tr>
+        <tr>
+          <td>FACEBOOK:</td>
+          <td>https://www.facebook.com/samurai.inc</td>
+        </tr>
+      </table>
+    </section>
+    <!-- 引入公共页尾 -->
+    <%= require("html-loader!../common/footer/index.html") %>
+</body>
+
+</html>

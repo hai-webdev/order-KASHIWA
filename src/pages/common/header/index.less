@@ -1,0 +1,95 @@
+.pc-header {
+  margin: 70px 0;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  .head-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right-layout {
+      display: flex;
+      align-items: center;
+      .nav-list {
+        display: flex;
+        margin-right: 50px;
+        .nav-item {
+          color: #999;
+          padding: 0 10px;
+          position: relative;
+          line-height: 1;
+          display: flex;
+          align-items: center;
+          &::after {
+            content: "";
+            width: 1px;
+            height: 12px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #999;
+          }
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+          &:hover,
+          &.on {
+            color: #000;
+          }
+        }
+      }
+      .search-box {
+        height: 30px;
+        .search {
+          position: relative;
+          height: 30px;
+          input {
+            position: absolute;
+            right: 0;
+            width: 0;
+            opacity: 0;
+            height: 30px;
+            border: 1px solid #666;
+            box-sizing: border-box;
+            outline: none;
+            background-color: #fff;
+            padding-left: 10px;
+            transition: 0.6s;
+          }
+          .submit {
+            position: absolute;
+            right: 0;
+            width: 42px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+          }
+          &:hover {
+            input {
+              width: 300px;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 10px;
+    background-color: #000;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.m-header{
+  display: none;
+}
+@import "./768.less" screen and (max-width:768px);
